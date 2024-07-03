@@ -1,4 +1,8 @@
 <models>
+  <model name="_NormTesting" size="12" amount="4"/>
+  <model name="TileDungeon" size="12" amount="4"/>
+
+  <!-- default models
   <model name="Apartemazements" size="8" d="3" amount="4"/>
   <model name="Apartemazements" size="8" d="3" iso="True" pixelsize="6" gui="150"/>
   <model name="CarmaTower" length="12" width="12" height="18"/>
@@ -162,6 +166,7 @@
   <model name="WaveDungeon" size="50"/>
   <model name="WaveFlowers" size="60"/>
   <model name="WolfBasedApproach" size="70" steps="300"/>
+  -->
   
   gifs
   <!--<model name="Wilson" size="59" steps="1000" gui="150" gif="True"/>-->

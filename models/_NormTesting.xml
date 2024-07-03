@@ -1,0 +1,19 @@
+<sequence values="BDNA">
+  <!--<all in="***/*P*/***" out="***/*B*/***"/>-->
+  <wfc tileset="Pathfinders" values="BDNA">
+    <markov>
+      <sequence>
+        <all in="NBD" out="*A*"/>
+        <all in="A*/BA" out="**/A*"/>
+        <all in="ABA" out="*A*"/>
+      </sequence>
+      <!--<prl in="A*/*A" out="A*/AA"/>-->
+    </markov>
+    <!--<rule in="B" out="Empty"/>-->
+    <!--<markov>
+      <all in="WA" out="*W"/>
+      <path from="A" to="W" on="B" color="W"/>
+      <one in="A" out="W"/>
+    </markov>-->
+  </wfc>
+</sequence>

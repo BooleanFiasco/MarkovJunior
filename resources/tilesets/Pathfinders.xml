@@ -1,0 +1,92 @@
+<tileset>
+	<tiles checksum="1">
+    <tile name="Empty" legend="B" weight="0.5"/>
+    <tile name="Street-Straight-Empty" legend="BD" weight="0.25"/>
+    <tile name="Street-End-Empty" legend="BD" weight="0.15"/>
+		<tile name="Street-Turn-Empty" legend="BD" weight="0.15"/>
+    <tile name="Street-Intersection-T-Empty" legend="BD" weight="0.05"/>
+    <tile name="Street-Intersection-Plus-Empty" legend="BD" weight="0.01"/>
+
+    <tile name="Building" legend="N" weight="0.5"/>
+    <tile name="Sidewalk" legend="A" weight="0.25"/>
+  </tiles>
+	<neighbors>
+    <neighbor left="Empty" right="Empty"/>
+    <neighbor left="Empty" right="Street-Straight-Empty"/>
+    <neighbor left="Empty" right="Street-Turn-Empty"/>
+    <neighbor left="Empty" right="z Street-Intersection-T-Empty"/>
+    <neighbor left="Empty" right="Building"/>
+    <neighbor left="Empty" right="Sidewalk"/>
+    <neighbor left="Empty" right="Street-End-Empty"/>
+    <neighbor left="Empty" right="z Street-End-Empty"/>
+    <neighbor left="Empty" right="zz Street-End-Empty"/>
+    
+    <neighbor left="Street-Straight-Empty" right="Empty"/>
+    <neighbor left="Street-Straight-Empty" right="Street-Straight-Empty"/>
+    <neighbor left="Street-Straight-Empty" right="Street-Turn-Empty"/>
+    <neighbor left="Street-Straight-Empty" right="z Street-Turn-Empty"/>
+    <neighbor left="z Street-Straight-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="z Street-Straight-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="z Street-Straight-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="Street-Turn-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="Street-Turn-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="Street-Turn-Empty" right="zzz Street-Turn-Empty"/>
+
+    <neighbor left="Street-Intersection-T-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="Street-Intersection-T-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="Street-Intersection-T-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="Street-Intersection-T-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="z Street-Intersection-T-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="z Street-Intersection-T-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="z Street-Intersection-T-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="z Street-Intersection-T-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="zz Street-Intersection-T-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="zz Street-Intersection-T-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="zz Street-Intersection-T-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="zz Street-Intersection-T-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="zzz Street-Intersection-T-Empty" right="Street-Straight-Empty"/>
+    <neighbor left="zzz Street-Intersection-T-Empty" right="Street-Turn-Empty"/>
+    <neighbor left="zzz Street-Intersection-T-Empty" right="z Street-Turn-Empty"/>
+    <neighbor left="zzz Street-Intersection-T-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="Street-Intersection-Plus-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="Street-Intersection-Plus-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="Street-Intersection-Plus-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="Street-Intersection-Plus-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="z Street-Intersection-Plus-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="z Street-Intersection-Plus-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="z Street-Intersection-Plus-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="z Street-Intersection-Plus-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="zz Street-Intersection-Plus-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="zz Street-Intersection-Plus-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="zz Street-Intersection-Plus-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="zz Street-Intersection-Plus-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="zzz Street-Intersection-Plus-Empty" right="z Street-Straight-Empty"/>
+    <neighbor left="zzz Street-Intersection-Plus-Empty" right="zz Street-Turn-Empty"/>
+    <neighbor left="zzz Street-Intersection-Plus-Empty" right="zzz Street-Turn-Empty"/>
+    <neighbor left="zzz Street-Intersection-Plus-Empty" right="zzz Street-End-Empty"/>
+
+    <neighbor left="Street-End-Empty" right="Street-Straight-Empty"/>
+    <neighbor left="Street-End-Empty" right="Street-Turn-Empty"/>
+    <neighbor left="Street-End-Empty" right="z Street-Turn-Empty"/>
+
+    <neighbor left="Building" right="Building"/>
+    <neighbor left="Building" right="Street-Straight-Empty"/>
+    <neighbor left="Building" right="Street-Turn-Empty"/>
+    <neighbor left="Building" right="z Street-Turn-Empty"/>
+    <neighbor left="Building" right="z Street-Intersection-T-Empty"/>
+
+    <neighbor left="Sidewalk" right="Sidewalk"/>
+    <neighbor left="Sidewalk" right="Building"/>
+    <neighbor left="Sidewalk" right="Street-Straight-Empty"/>
+    <neighbor left="Sidewalk" right="Street-Turn-Empty"/>
+    <neighbor left="Sidewalk" right="z Street-Turn-Empty"/>
+    <neighbor left="Sidewalk" right="z Street-Intersection-T-Empty"/>
+	</neighbors>
+</tileset>
